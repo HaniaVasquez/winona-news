@@ -1,0 +1,1 @@
+import type { ContentfulPost } from '~/types/contentful'export function usePosts(preview = false) {  return useAsyncData<ContentfulPost[]>(() => $fetch(`/api/posts${preview ? '?preview=true' : ''}`))}

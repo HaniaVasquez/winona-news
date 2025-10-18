@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Poppins', 'Inter', system-ui, sans-serif;
+
+  --color-primary-50: #f2eaf0;
+  --color-primary-100: #e5d2da;
+  --color-primary-200: #d3a3b8;
+  --color-primary-300: #c27599;
+  --color-primary-400: #b04b7c;
+  --color-primary-500: #b61f63;
+  --color-primary-600: #9e1b57;
+  --color-primary-700: #831648;
+  --color-primary-800: #68123a;
+  --color-primary-900: #4e0d2b;
+  --color-primary-950: #3b091f;
+
+  --color-secondary-50: #e6f8f9;
+  --color-secondary-100: #b9edef;
+  --color-secondary-200: #8ce2e5;
+  --color-secondary-300: #5fd6dc;
+  --color-secondary-400: #32cbd2;
+  --color-secondary-500: #119aa5;
+  --color-secondary-600: #0e7c84;
+  --color-secondary-700: #0b5e64;
+  --color-secondary-800: #073f43;
+  --color-secondary-900: #042122;
+
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #fafafa;
+  --color-neutral-200: #f5f5f5;
+  --color-neutral-300: #e5e5e5;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+
+  --color-surface: #ffffff;
+  --color-muted: #f2eaf0;
+}
