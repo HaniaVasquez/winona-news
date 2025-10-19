@@ -1,25 +1,34 @@
 <script setup>
-  useHead({
-    meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-    link: [{ rel: 'icon', href: '/favicon.ico' }],
-    htmlAttrs: {
-      lang: 'en',
-    },
-  })
 
-  const title = 'Nuxt Starter Template'
-  const description =
-    'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+useHead({
+  link: [
+    { rel: 'icon', type: 'image/jpeg', href: '/winona_icon.jpeg' },
+  ],
+  meta: [
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ],
+  htmlAttrs: {
+    lang: 'en',
+  },
+})
 
-  useSeoMeta({
-    title,
-    description,
-    ogTitle: title,
-    ogDescription: description,
-    ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-    twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-    twitterCard: 'summary_large_image',
-  })
+const title = 'Winona News – A Nuxt Blog Example'
+const description =
+    'A technical assessment project built with Nuxt 4 and Nuxt UI. It demonstrates content integration with Contentful, SEO optimization, and responsive and dark mode front-end rendering through a simple blog with articles, images, and metadata.'
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: 'Winona News – Company Blog',
+  ogDescription: 'Explore articles and updates from By Winona.',
+  ogImage: 'https://bywinona.com/svg/winona-icon.svg',
+  ogType: 'website',
+  ogSiteName: 'By Winona',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@bywinona',
+  twitterCreator: '@bywinona',
+  twitterImage: 'https://bywinona.com/svg/winona-icon.svg',
+})
 </script>
 
 <template>
@@ -27,7 +36,13 @@
     <UHeader>
       <template #left>
         <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
+          <div class="app-logo">
+            <NuxtImg
+                alt="By Winona"
+                class="h-10 w-auto transition-all duration-300 dark:invert dark:brightness-0"
+                src="https://bywinona.com/svg/winona-icon.svg"
+            />
+          </div>
         </NuxtLink>
       </template>
 
@@ -35,11 +50,11 @@
         <UColorModeButton />
 
         <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
           aria-label="GitHub"
           color="neutral"
+          icon="i-simple-icons-github"
+          target="_blank"
+          to="https://github.com/HaniaVasquez/winona-news"
           variant="ghost"
         />
       </template>
@@ -49,11 +64,20 @@
       <NuxtPage />
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
+    <USeparator icon="i-lucide-newspaper" />
 
     <UFooter>
       <template #left>
-        <p class="text-sm text-muted">Built with Nuxt UI • © {{ new Date().getFullYear() }}</p>
+        <p class="text-sm text-muted">
+          Built with Nuxt UI for Winona Technical Assessment • © {{ new Date().getFullYear() }} •
+          <a
+              href="https://github.com/HaniaVasquez/winona-news"
+              target="_blank"
+              class="hover:text-primary transition-colors"
+          >
+            Hania Vasquez
+          </a>
+        </p>
       </template>
     </UFooter>
   </UApp>

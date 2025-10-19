@@ -1,1 +1,1 @@
-import type { ContentfulPost } from '~/types/contentful'export function usePosts(preview = false) {  return useAsyncData<ContentfulPost[]>(() => $fetch(`/api/posts${preview ? '?preview=true' : ''}`))}
+import type { ContentfulPost } from '~/types/contentful'export function usePosts(preview = false) {  const query = preview ? '?preview=true' : ''  return useAsyncData<ContentfulPost[]>(    `posts${query}`,    () => $fetch(`/api/posts${query}`),    {      lazy: false,      server: true,      default: () => [],    }  )}
