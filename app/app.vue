@@ -2,7 +2,7 @@
 
 useHead({
   link: [
-    { rel: 'icon', type: 'image/jpeg', href: '/winona_icon.jpeg' },
+    { rel: 'icon', type: 'image/png', href: '/winona_icon.png' }
   ],
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
