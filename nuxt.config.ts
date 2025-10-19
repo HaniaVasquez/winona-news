@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    preset: 'vercel'
+  },
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',

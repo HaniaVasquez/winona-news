@@ -58,3 +58,12 @@ pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+## Deployment
+This project is automatically deployed on [Vercel](https://vercel.com/) through continuous integration (CI/CD) connected to the GitHub repository.  
+Every push to `main` triggers a new production build.  
+Preview deployments are automatically generated for pull requests.
+
+This project uses Server-Side Rendering (SSR) to ensure that updates from Contentful are always reflected immediately without requiring a rebuild.
+This approach trades a small performance cost for real-time content accuracy, a realistic choice for production blog platforms.
