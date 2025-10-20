@@ -38,9 +38,9 @@ useSeoMeta({
         <NuxtLink to="/">
           <div class="app-logo">
             <NuxtImg
-                alt="By Winona"
-                class="h-10 w-auto transition-all duration-300 dark:invert dark:brightness-0"
-                src="https://bywinona.com/svg/winona-icon.svg"
+              alt="By Winona"
+              class="h-10 w-auto transition-all duration-300 dark:invert dark:brightness-0"
+              src="https://bywinona.com/svg/winona-icon.svg"
             />
           </div>
         </NuxtLink>
@@ -71,9 +71,9 @@ useSeoMeta({
         <p class="text-sm text-muted">
           Built with Nuxt UI for Winona Technical Assessment • © {{ new Date().getFullYear() }} •
           <a
-              href="https://github.com/HaniaVasquez/winona-news"
-              target="_blank"
-              class="hover:text-primary transition-colors"
+            href="https://github.com/HaniaVasquez/winona-news"
+            target="_blank"
+            class="hover:text-primary transition-colors"
           >
             Hania Vasquez
           </a>
