@@ -1,16 +1,9 @@
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
-    preset: 'vercel'
+    preset: 'vercel',
   },
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxt/content',
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxt/test-utils',
-  ],
+  modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/image'],
   devtools: {
     enabled: true,
   },
@@ -39,13 +32,4 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-01-15',
-
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs',
-      },
-    },
-  },
 })

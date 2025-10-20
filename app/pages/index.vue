@@ -6,6 +6,6 @@
 </template>
 
 <script setup lang="ts">
-const { data: posts, error } = await usePosts()
-if (error.value) throw error.value
+  const { data: posts, error } = await usePosts()
+  if (error.value) throw error.value
 </script>
