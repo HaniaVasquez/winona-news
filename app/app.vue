@@ -1,31 +1,3 @@
-<script setup>
-  useHead({
-    link: [{ rel: 'icon', type: 'image/png', href: '/winona_icon.png' }],
-    meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-    htmlAttrs: {
-      lang: 'en',
-    },
-  })
-
-  const title = 'Winona News – A Nuxt Blog Example'
-  const description =
-    'A technical assessment project built with Nuxt 4 and Nuxt UI. It demonstrates content integration with Contentful, SEO optimization, and responsive and dark mode front-end rendering through a simple blog with articles, images, and metadata.'
-
-  useSeoMeta({
-    title,
-    description,
-    ogTitle: 'Winona News – Company Blog',
-    ogDescription: 'Explore articles and updates from By Winona.',
-    ogImage: 'https://bywinona.com/svg/winona-icon.svg',
-    ogType: 'website',
-    ogSiteName: 'By Winona',
-    twitterCard: 'summary_large_image',
-    twitterSite: '@bywinona',
-    twitterCreator: '@bywinona',
-    twitterImage: 'https://bywinona.com/svg/winona-icon.svg',
-  })
-</script>
-
 <template>
   <UApp>
     <UHeader>
@@ -77,3 +49,31 @@
     </UFooter>
   </UApp>
 </template>
+
+<script setup>
+useHead({
+  link: [{ rel: 'icon', type: 'image/png', href: '/winona_icon.png' }],
+  meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+  htmlAttrs: {
+    lang: 'en',
+  },
+})
+
+const title = 'Winona News – A Nuxt Blog Example'
+const description =
+    'A technical assessment project built with Nuxt 4 and Nuxt UI. It demonstrates content integration with Contentful, SEO optimization, and responsive and dark mode front-end rendering through a simple blog with articles, images, and metadata.'
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: 'Winona News – Company Blog',
+  ogDescription: 'Explore articles and updates from By Winona.',
+  ogImage: 'https://bywinona.com/svg/winona-icon.svg',
+  ogType: 'website',
+  ogSiteName: 'By Winona',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@bywinona',
+  twitterCreator: '@bywinona',
+  twitterImage: 'https://bywinona.com/svg/winona-icon.svg',
+})
+</script>
